@@ -18,8 +18,6 @@ This is a responsive and interactive **Day Planner** built using **HTML, CSS, an
 
 🔗 [Click here to view the live project](https://naitik2701.github.io/Day_planner_Task/)
 
-> Replace `<your-username>` with your GitHub username in the link above.
-
 ## 📁 Project Structure
 DayPlanner_Task/
 │
