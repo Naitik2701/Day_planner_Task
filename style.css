@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+}
+
+#planner .time-block {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hour {
+  width: 80px;
+  padding: 10px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.task {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  width: 60px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.past {
+  background-color: #e0e0e0;
+}
+
+.present {
+  background-color: #fff59d;
+}
+
+.future {
+  background-color: #c8e6c9;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .hour {
+  background-color: #333;
+}
+
+body.dark .task {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .past {
+  background-color: #2c2c2c;
+}
+
+body.dark .present {
+  background-color: #5c5c3d;
+}
+
+body.dark .future {
+  background-color: #2d4b2d;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#current-time {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.task-checkbox {
+  margin-right: 5px;
+  transform: scale(1.2);
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .time-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hour, .task, .save-btn {
+    width: 100%;
+  }
+
+  .save-btn {
+    margin-top: 5px;
+  }
+}
